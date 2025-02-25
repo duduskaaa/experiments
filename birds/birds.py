@@ -6,21 +6,14 @@ pg.write("cmd", interval=0.4)
 pg.press('Enter')
 sleep(3)
 
-pg.write('python')
+pg.write('chrome')
 pg.press('Enter')
 
-pg.write("from functools import reduce", interval=0.03)
+sleep(3)
+pg.write("cats", interval=0.03)
 pg.press('Enter')
 
-pg.write("array = [i for i in range(1, 10)]", interval=0.03)
-pg.press('Enter')
 
-pg.write("fact = reduce(lambda x, y: x*y, array)", interval=0.03)
-pg.press('Enter')
 
-pg.write("fact", interval=0.03)
-pg.press('Enter')
-
-pg.write("We found factorial of 9. Nahuya? Idi nahui", interval=1)
-pg.press('Enter')
-
+with open("", "a") as file:
+    file.write(f"{input('Отзыв: ')}")
