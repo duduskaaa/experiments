@@ -1,19 +1,13 @@
 import pyautogui as pg
 from time import sleep
 
-pg.press("win")
-pg.write("cmd", interval=0.4)
+pg.press("win+r")
+pg.write("chrome", interval=0.4)
 pg.press('Enter')
 sleep(3)
 
-pg.write('chrome')
+pg.write('cats')
 pg.press('Enter')
 
-sleep(3)
-pg.write("cats", interval=0.03)
-pg.press('Enter')
-
-
-
-with open("", "a") as file:
+with open("logs.txt", "a") as file:
     file.write(f"{input('Отзыв: ')}")
