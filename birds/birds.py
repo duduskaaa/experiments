@@ -11,3 +11,8 @@ pg.press('Enter')
 
 with open("logs.txt", "a") as file:
     file.write(f"{input('Отзыв: ')}")
+
+
+# pyinstaller --onefile test.py
+# python -m PyInstaller --onefile test.py
+
