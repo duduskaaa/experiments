@@ -11,7 +11,7 @@ path_s = os.path.join(new_dir, "new.png")
 
 TOKEN = ""
 CHAT_ID =  0
-bot = telebot.Telebot(TOKEN)
+bot = telebot.TeleBot(TOKEN)
 
 try:
   def make():
